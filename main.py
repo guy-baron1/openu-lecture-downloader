@@ -5,8 +5,8 @@ from tqdm import tqdm
 
 # TODO: change according to desired video
 num_batches = 5
-md5 = 'odRJAaj0eOmN5woIZtIqPQ'
-expires = 1680732326
+md5 = 'ZEZ2EOPFMNKclM9_s2Vg9Q'
+expires = 1681728962
 output_file_name = 'infi2_lesson_4'
 
 def setup():
@@ -16,7 +16,7 @@ def setup():
             os.makedirs(dir)
 
 def generate_batch_url(md5, expires, batch_num):
-    return f'https://souvod.bynetcdn.com/vod/smil:vod/openu/PRV5/Dy009Gmicv/App/Dy009Gmicv_10.smil/media_b1800000_{batch_num}.ts?md5={md5}&expires={expires}'
+    return f'https://souvod.bynetcdn.com/vod/smil:vod/openu/PRV5/l9XuqVl4pa/App/l9XuqVl4pa_10.smil/media_b400000_{batch_num}.ts?md5={md5}&expires={expires}'
 
 def download_batches():
     for batch in tqdm(range(num_batches)):
